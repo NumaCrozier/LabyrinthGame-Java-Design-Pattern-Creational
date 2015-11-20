@@ -1,5 +1,6 @@
 package fr.iutvalence.info.dut.m3105.labyrinthGame;
 
+import java.io.File;
 import java.util.HashSet;
 import java.util.Set;
 
@@ -17,6 +18,10 @@ public class TestLabyrinthGame
 	 */
 	public static void main(String[] args)
 	{
+		File file = new File("laby.txt");
+		
+		file.createNewFile();
+		      
 		Set<Position> blockPositions = new HashSet<Position>();
 		blockPositions.add(new Position(2,0));
 		blockPositions.add(new Position(3,0));
